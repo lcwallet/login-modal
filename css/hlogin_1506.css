@@ -1,0 +1,212 @@
+#lean_overlay {
+		position: fixed;
+		z-index: 100;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		display: none;
+}
+
+.HloginPopupContainer {
+		position: absolute;
+		color: #536670;
+		max-width: 370px;
+		width: 100%;
+		height: auto;
+		left: 45%;
+		top: 60px;
+		background: #FFF;
+		border-radius: 8px;
+}
+
+.HloginPopupContainer a {
+color: #033076;
+}
+
+.HloginPopupContainer a:hover {
+	text-decoration: none;
+}
+
+#modal_trigger {
+    color: #fff
+}
+
+.popupHeader { 
+		position: relative;
+		padding: 10px 20px;
+		border-bottom: 1px solid #DDD;
+		text-align: center;
+	}
+
+.popupHeader .modal_close {
+    position: absolute;
+    right: -14px;
+    top: -16px;
+    background: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    color: #8a8686;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.popupBody {
+		padding: 0 20px 20px;
+}
+
+.HloginBtn {
+		display: block;
+		clear: both;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		background: #F4F4F2;
+		 border-radius: 5px;
+		overflow: hidden;
+}
+
+.header_title {
+	font-size: 18px;
+}
+
+.icon {
+		display: initial;
+		width: 10px;
+		padding: 5px 10px;
+		color: #FFF;
+		font-size: 16px;
+		text-align: center;
+}
+
+.fb{
+		background:#4f6ca7;
+}
+.fb:hover {
+		background:#2c80aa;
+}
+
+.google{
+		background:#dc4c3f;
+}
+.google:hover {
+		background:#ec3e2e;
+}
+.btnDefault{
+		background:#525b60;
+}
+.btnDefault:hover{
+		background:#6e7173;
+}
+.btnText {
+		display: block;
+		padding: 5px 0;
+		font-size: 16px;
+		text-align: center;
+		color: #fff;
+}
+
+.centeredText {
+		text-align: center;
+		margin: 16px 0;
+		clear: both;
+		overflow: hidden;
+}
+.tnc {
+	font-size: 11px; font-weight: bold; 
+}
+
+.HloginPopupContainer input {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #DDD;
+		color: #666;
+}
+
+.HloginPopupContainer input[type="checkbox"] {
+		float: left;
+		width: auto;
+		margin-left: 0;
+		border: 1px solid #DDD;
+}
+
+.HloginPopupContainer .checkbox {
+		margin-bottom: 10px;
+		clear: both;
+		overflow: hidden;
+}
+
+.forgot_password {
+	display: block;
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+}
+
+
+.HloginPopupContainer,
+.LoginForm_pg,
+.RegisterForm_pg {
+		display: none;
+}
+
+.RegisterForm_pg { 
+		padding-top: 25px;
+}
+
+.RegisterForm_pg label {
+		display: block;
+		margin-bottom: 5px;
+}
+ 
+/*.HloginPopupContainer input {color: #ddd;}
+.HloginPopupContainer input:focus::-webkit-input-placeholder { 
+	color:transparent; } */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:#aaa;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:#aaa;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:#aaa;
+}
+
+@media only screen and (max-width: 400px) {
+/*    #lean_overlay {
+      background: #fff;
+          opacity: 1!important;
+    }
+
+    .modal_close {
+    	display: none;
+    }
+
+    #modal {
+    	top:10px;
+    }*/
+
+    .popupHeader .modal_close {
+    	right: 21px;
+    }
+    .HloginPopupContainer {
+    	border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .btn-mobile-view {
+	display:block;
+	margin-top: 100px;
+    }
+}
